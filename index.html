@@ -1,0 +1,292 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+    name="description"
+    content="Itzfizz scroll driven hero animation assignment"
+>
+
+<title>Welcome to Itzfizz</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head><body><!-- ================= HERO SECTION ================= -->
+
+<main class="hero">
+
+    <!-- Background glow -->
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- Top navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            ITZFIZZ<span>.</span>
+        </div>
+
+        <div class="nav-right">
+            <span>WEB DEVELOPMENT</span>
+            <span class="menu-dot"></span>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Content -->
+    <section class="hero-content">
+
+        <p class="eyebrow">
+            DIGITAL EXPERIENCES • WEB DEVELOPMENT
+        </p>
+
+        <h1 class="hero-title">
+            W E L C O M E
+            <span>I T Z F I Z Z</span>
+        </h1>
+
+        <p class="hero-description">
+            We create modern digital experiences where design,
+            technology and motion come together.
+        </p>
+
+
+        <!-- Statistics -->
+        <div class="stats">
+
+            <div class="stat">
+                <h2><span class="counter">98</span>%</h2>
+                <p>Client Satisfaction</p>
+            </div>
+
+            <div class="stat">
+                <h2><span class="counter">85</span>%</h2>
+                <p>Performance Focus</p>
+            </div>
+
+            <div class="stat">
+                <h2><span class="counter">92</span>%</h2>
+                <p>Creative Impact</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN VISUAL ================= -->
+
+    <div class="visual-wrapper">
+
+        <div class="visual-glow"></div>
+
+        <div class="car-container">
+
+            <!-- Temporary car visual -->
+           <div class="car">
+
+    <div class="car-shadow"></div>
+
+    <div class="car-svg">
+
+        <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Main body -->
+            <path
+                d="M75 190
+                   C95 145 145 135 205 130
+                   L270 65
+                   C290 43 320 32 355 32
+                   L445 32
+                   C480 32 510 45 530 70
+                   L580 130
+                   C630 135 655 155 665 190
+                   L650 215
+                   L50 215
+                   Z"
+                fill="url(#bodyGradient)"
+            />
+
+            <!-- Windows -->
+            <path
+                d="M285 68
+                   L245 125
+                   L350 125
+                   L350 68
+                   Z"
+                fill="#15171b"
+            />
+
+            <path
+                d="M365 68
+                   L365 125
+                   L510 125
+                   L470 68
+                   Z"
+                fill="#15171b"
+            />
+
+            <!-- Window shine -->
+            <path
+                d="M270 78 L250 110"
+                stroke="#ffffff"
+                stroke-opacity=".25"
+                stroke-width="5"
+            />
+
+            <!-- Front light -->
+            <ellipse
+                cx="625"
+                cy="170"
+                rx="25"
+                ry="13"
+                fill="#ffffff"
+            />
+
+            <!-- Rear light -->
+            <ellipse
+                cx="78"
+                cy="170"
+                rx="18"
+                ry="11"
+                fill="#ff5555"
+            />
+
+            <!-- Wheels -->
+            <circle
+                cx="190"
+                cy="215"
+                r="48"
+                fill="#090909"
+            />
+
+            <circle
+                cx="190"
+                cy="215"
+                r="28"
+                fill="#34383d"
+            />
+
+            <circle
+                cx="510"
+                cy="215"
+                r="48"
+                fill="#090909"
+            />
+
+            <circle
+                cx="510"
+                cy="215"
+                r="28"
+                fill="#34383d"
+            />
+
+            <!-- Wheel highlights -->
+            <circle
+                cx="190"
+                cy="215"
+                r="10"
+                fill="#777"
+            />
+
+            <circle
+                cx="510"
+                cy="215"
+                r="10"
+                fill="#777"
+            />
+
+            <!-- Gradient -->
+            <defs>
+
+                <linearGradient
+                    id="bodyGradient"
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                >
+
+                    <stop
+                        offset="0%"
+                        stop-color="#ffffff"
+                    />
+
+                    <stop
+                        offset="50%"
+                        stop-color="#d8dce0"
+                    />
+
+                    <stop
+                        offset="100%"
+                        stop-color="#777c82"
+                    />
+
+                </linearGradient>
+
+            </defs>
+
+        </svg>
+
+    </div>
+
+</div>s
+
+        </div>
+
+    </div>
+
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <div class="scroll-line">
+            <span></span>
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- Extra scroll area -->
+<section class="after-hero">
+
+    <p>KEEP EXPLORING</p>
+
+    <h2>
+        Built for motion.<br>
+        Designed for impact.
+    </h2>
+
+</section>
+
+
+<!-- GSAP -->
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+</script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+</script>
+
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
